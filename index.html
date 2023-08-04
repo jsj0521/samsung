@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캐스퍼 원페이지 스크롤 레이아웃</title>
+  <style>
+  </style>
+  <!-- 유튜브 -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <!-- 초기화 -->
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+
+  <!-- 기본, 공통서식 -->
+  <link href="./css/base.css" type="text/css" rel="stylesheet">
+
+  <!-- 레이아웃서식 -->
+  <link href="./css/layout.css" type="text/css" rel="stylesheet">
+
+  <!-- 콘텐츠 내용 서식 -->
+  <link href="./css/main.css" type="text/css" rel="stylesheet">
+
+  <!-- 스와이퍼 슬라이드 서식 -->
+  <link href="./css/swiper.css" type="text/css" rel="stylesheet">
+
+  <!-- 아이콘폰트 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- css3속성 사용시 접두사 자동으로 붙여주는 스크립트 소스 -->
+  <script src="./script/prefixfree.min.js"></script>
+
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- 제이쿼리 ui라이브러리 -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <!-- 제이쿼리 쿠키파일 -->
+  <script src="./script/jquery.cookie.js"></script>
+
+  <!-- 제이쿼리 공통 스크립트 -->
+  <script src="./script/layout.js"></script>
+
+  <!-- 콘텐츠 스크립트 -->
+  <script src="./script/main.js"></script>
+
+  <!-- 갤럭시 스와이퍼 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+ <!-- 헤더 영역 시작-->
+  <header>
+    <h1>
+      <a href="index.html" title="메인페이지로 바로가기">
+        <img src="./images/logo-casper-white.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <!-- 상단 내비게이션 -->
+    <nav>
+      <ul class="gnb">
+        <li><a href="#intro" title="소개">소개</a></li>
+        <li><a href="#test" title="체험">체험</a></li>
+        <li><a href="#event" title="이벤트">이벤트</a></li>
+        <li><a href="#buy" title="구매">구매</a></li>
+        <li><a href="#cs" title="고객지원">고객지원</a></li>
+      </ul>
+    </nav>
+
+    <i class="fas fa-user"></i> <!-- 로그인 아이콘 -->
+    <i class="fas fa-bell"></i> <!-- 알람 아이콘-->
+  </header>
+
+  <!-- 원형내비게이션 -->
+  <!-- <nav id="m_nav">
+    <ul>
+      <li><span>1</span><a href="#" title="소개">소개</a></li>
+      <li><span>2</span><a href="#" title="체험">체험</a></li>
+      <li><span>3</span><a href="#" title="이벤트">이벤트</a></li>
+      <li><span>4</span><a href="#" title="구매">구매</a></li>
+      <li><span>5</span><a href="#" title="고객지원">고객지원</a></li>
+    </ul>
+  </nav> -->
+
+  <!-- 메인영역 시작 -->
+  <main>
+     <!-- Swiper -->
+  <div class="zzz">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <section id="main_intro">
+          <h2>Galaxy Z Flip5</h2>
+          <article>
+            <h3>CASPER</h3>
+            <p>오늘 오후 6시! 삼닷 Live 홍현희의 네고 혜택</p>
+            <a href="#" title="사전 구매하기">사전 구매하기</a>
+            <a href="#" title="Live 알림 신청하기">Live 알림 신청하기</a>
+            <a href="#" title="자세히 보기">자세히 보기</a>
+          </article>
+          <video autoplay muted loop='infinite'>
+            <source src="./images/galaxy.mkv" type="video/webm">
+          </video>
+    
+          <a href="#" title="아래로 이동" class="next_btn">아래로 이동</a>
+    
+        </section>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" title=""><img src="./images/갤럭시_남녀.jpg" alt=""></a>
+        </div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  </div>
+    <section id="top3">
+      <h2>가장 많이 찾는 캐스퍼 TOP3
+        <video autoplay muted loop='infinite'>
+            <source src="./images/마켓_동영상.webm" type="video/webm">
+          </video>
+        </h2>
+    </section>
+    
+    <section id="intro">
+      <h2>소개</h2>
+    </section>
+
+    <section id="test">
+      <h2>시승신청</h2>
+    </section>
+
+    <section id="event">
+      <h2>이벤트&프로모션</h2>
+    </section>
+
+    <section id="buy">
+      <h2>캐스퍼구매 안내</h2>
+    </section>
+
+    <section id="cs">
+      <h2>고객지원</h2>
+    </section>
+  </main>
+
+  <!-- 푸터영역 시작 -->
+  <footer>
+    <div class="f_inner">
+      <h2>
+        <a href="index.html" title="하단로고">
+          <img src="./images/logo-hyundai.a9ebdc6.png" alt="하단로고">
+        </a>
+      </h2>
+      <nav class="f_lnb">
+        <ul>
+          <li><a href="#" title="이용약관">이용약관</a></li>
+          <li><a href="#" title="개인정보 처리방침">개인정보 처리방침</a></li>
+          <li><a href="#" title="저작권안내">저작권안내</a></li>
+          <li><a href="#" title="공동인증서 안내">공동인증서 안내</a></li>
+          <li><a href="#" title="현대자동차 홈페이지">현대자동차 홈페이지</a></li>
+        </ul>
+      </nav>
+      <address>
+        <dl>
+          <dt>사업자등록번호 :</dt>
+          <dd>101-00-00000</dd>
+          <dt>통신판매업신고번호 : </dt>
+          <dd>2022-012345</dd>
+          <dt>대표이사 : </dt>
+          <dd>장재훈</dd>
+          <dt>주소 : </dt>
+
+          <dd>서울시 서초구 헌릉로 12</dd>
+          <dt>호스팅 서비스 제공 : </dt>
+          <dd>현대오토에버(주)</dd>
+        </dl>
+        <p>copyright&copy; 2023 hyundai motor company, all rights reserved.</p>
+      </address>
+    </div>
+  </footer>
+
+  <!-- 스와이퍼 슬라이드 스크립트 -->
+  <script src="./script/swiper.js"></script>
+
+  <!--갤럭시-->  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  <script src="./images/script/jquery.cookie.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    const modal=`
+        <div class="modal">
+          <div class="inner">
+            <a href="#" title=""><img src="../images/팝업이미지.webp" alt=""></a>
+            <p>
+              <input type="checkbox" id="ch">
+              <label for="ch">오늘 하루 열지 않음</label>
+              <input type="button" value="닫기" id="c_btn">  
+            </p>
+          </div>
+        </div>
+      `;
+
+    // 모달 변수를 body의 맨 뒤쪽에 출력한다.
+    $('body').append(modal);
+    
+    //쿠키생성하기.
+    let ch = $('.modal #ch'); //체크박스 변수
+    
+    // 현재 브라우저에 쿠키정보가 있는지 없는지 유무를 판단하여 모달이 나오지 않게 함.
+    if($.cookie('popup')=='none'){
+      $('.modal').hide();
+    }
+
+    //쿠키의 존재 유무를 체크하여 생성하거나 모달윈도 숨기기
+    function closeModal(){
+      if(ch.is(':checked')){//만약에 체크박스에 체크가 된 경우라면
+        //쿠키를 생성하기 
+          $.cookie('popup', 'none', {expires:1, path:'/'});
+      }
+      //체크박스에 체크 안한 경우 그냥 모달 숨기기
+      $('.modal').hide();
+    }
+      //닫기 버튼을 클릭하면 closeModal함수 실행하여 쿠키를 생성하고 모달 숨기기한다.
+      $('.modal #c_btn').click(function(){
+        closeModal();
+      });
+      });
+  </script>
+</body>
+</html>
